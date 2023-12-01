@@ -1,0 +1,15 @@
+
+version: '3'
+
+services:
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    # Volumes, UID, GID 는 꼭 설정해야 함
+    user: "$(id -u):$(id -g)"
+    volumes:
+      - ../grafana-data:/var/lib/grafana
+#    depends_on:
+#      - prometheus
