@@ -1,4 +1,8 @@
 
+spring:
+  profiles:
+    active: prometheus
+
 management:
   endpoint:
     metrics:
@@ -9,4 +13,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: *
+        include: '*'
