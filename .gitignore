@@ -6,6 +6,7 @@ build/
 !**/src/test/**/build/
 .idea/
 .gradle/
+/src/main/resources/grafana-data/
 
 ### STS ###
 .apt_generated
